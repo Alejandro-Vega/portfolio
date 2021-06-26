@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Navigation */
+/*----------------------------------------------------------------*/
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    justify-content: flex-end;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+#nav-list {
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: auto 0;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 0.1rem;
+}
+
+.underlined {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 0.1rem;
+    border-bottom: 3px solid #5A92FF;
+}
+
+.link::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #5A92FF;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.link:hover:after { transform: scaleX(1); }
+.link.fromRight:after{ transform-origin:100% 50%; }
+.link.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+
+/*----------------------------------------------------------------*/
+
+/* Landing Page */
+/*----------------------------------------------------------------*/
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Black Box */
+/*----------------------------------*/
+#black-box {
+    background-color: #000;
+    width: 65%;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#intro-text {
+    margin-top: 8%;
+    margin-left: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#intro-text h2 {
+    font-weight: 300;
+    line-height: 0.9;
+}
+
+#dict-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 0.5rem;
+}
+
+#dict-text > p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin: 0.1rem 0;
+    color: rgba(160, 160, 160, 0.8);
+}
+
+#desc {
+    margin-left: 10%;
+    margin-top: 5rem;
+}
+
+#desc h3 {
+    font-weight: 200;
+}
+
+/*----------------------------------*/
+
+#call-to-action {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#art {
+    width: 60%;
+    height: 15rem;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-image: url("images/circle.png");
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    background-position: center center; 
+}
+
+
+#art img {
+    max-height: 12rem;
+    max-width: 9rem;
+    width: auto;
+    height: auto;
+    align-self: flex-end;
+}
+
+.btn {
+    display: block;
+    padding: 0.5rem 2rem;
+    background-color: #5A92FF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+}
+
+#cta-btns {
+    width: auto;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+#work-btn {
+    background-color: #000;
+}
+
+/*----------------------------------------------------------------*/
+
+
+/* CSS Effects
+/*----------------------------------------------------------------*/
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*----------------------------------------------------------------*/
