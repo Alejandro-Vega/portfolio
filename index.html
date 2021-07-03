@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@200;300;400;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
         <script src="app.js"></script>
     </head>
     <body>
@@ -35,7 +37,7 @@
                     </div>
                 </div>
                 <div id="desc">
-                    <h3>Welcome to my portflio, where I<br> 
+                    <h3>Welcome to my portfolio, where I<br> 
                         try convincing you to hire me.
                     </h3>
                 </div>
@@ -50,6 +52,187 @@
                 </div>
             </div>
         </main>
+        <div class="divider">
+        </div>
+        
+        <section id="slide-wrapper">
+            <h2>Skills</h2>
+            <div class="slides">
+                <div class="arrow">
+                    <h1 id="left-arrow"><</h1>
+                </div>
+
+                <div class="slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="108" viewBox="0 0 124 108">
+                        <image id="info-icon1" width="124" height="108" xlink:href="data:image/png;base64,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" style="mix-blend-mode: hard-light;isolation: isolate"/>
+                      </svg>
+                      
+                    <h4>Web Development</h4>
+                    <p>
+                        consectetur adipisicing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua  enim ad 
+                        minim veniam, quis nostrud  
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="102" viewBox="0 0 117 102">
+                        <image id="info-icon2" width="117" height="102" xlink:href="data:image/png;base64,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" style="mix-blend-mode: hard-light;isolation: isolate"/>
+                      </svg>
+                      
+                    <h4>Creative Design</h4>
+                    <p>
+                        consectetur adipisicing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua  enim ad 
+                        minim veniam, quis nostrud  
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="108" viewBox="0 0 124 108">
+                        <image id="info-icon3" width="124" height="108" xlink:href="data:image/png;base64,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" style="mix-blend-mode: hard-light;isolation: isolate"/>
+                      </svg>
+                      
+                    <h4>Mobile Development</h4>
+                    <p>
+                        consectetur adipisicing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua  enim ad 
+                        minim veniam, quis nostrud  
+                    </p>
+                </div>
+                
+                <div class="arrow">
+                    <h1 id="right-arrow">></h1>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="project-wrapper">
+                <div class="img-wrapper"> 
+                    <img class="project-img" src="images/example-dijkstra-1.gif">
+                </div>
+                <div class="project-desc">
+                    <h2>PATHFINDING VISUALIZER</h2>
+                    <p>
+                        A web application that visualizes pathfinding algorithms such as 
+                        Dijkstra's algorithm
+                    </p>
+
+                    <div class="link-btns">
+                        <a class="view-btn view-code-btn hvr-grow" href="https://github.com/Alejandro-Vega/Pathfinding-Visualizer" target="_blank">
+                            <img class="icon" src="images/code-icon3.png">
+                            View Code
+                        </a>
+                        <a class="view-btn live-demo-btn hvr-grow" href="https://alejandro-vega.github.io/Pathfinding-Visualizer/" target="_blank">
+                            <img class="icon" src="images/demo-icon2.png">
+                            Live Demo
+                        </a>
+                    </div>
+
+                    <ul class="chip-list">
+                        <li class="chip">HTML</li>
+                        <li class="chip">CSS</li>
+                        <li class="chip">JAVASCRIPT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="project-desc">
+                    <h2>CUBIC SPLINE INTERPOLATION</h2>
+                    <p>
+                        This program uses the cubic spline formula to solve for 
+                        interpolating polynomials that go through the provided points, 
+                        and provides each step towards the solution.
+                    </p>
+                    
+                    <div class="link-btns">
+                        <a class="view-btn view-code-btn hvr-grow" href="https://github.com/Alejandro-Vega/Cubic-Spline-Interpolation-Visualizer" target="_blank">
+                            <img class="icon" src="images/code-icon3.png">
+                            View Code
+                        </a>
+                        <a class="view-btn live-demo-btn hvr-grow" href="https://cubic-spline-interpolation.herokuapp.com/index.html" target="_blank">
+                            <img class="icon" src="images/demo-icon2.png">
+                            Live Demo
+                        </a>
+                    </div>
+
+                    <ul class="chip-list">
+                        <li class="chip">HTML</li>
+                        <li class="chip">CSS</li>
+                        <li class="chip">JAVASCRIPT</li>
+                        <li class="chip">EXPRESS</li>
+                        <li class="chip">DESMOS API</li>
+                    </ul>
+                </div>
+                <div class="img-wrapper"> 
+                    <img class="project-img" src="images/example-graph1.png">
+                </div>
+            </div>
+
+            <div class="project-wrapper">
+                <div class="img-wrapper"> 
+                    <img class="project-img" src="images/example-scrape-1.png">
+                </div>
+                <div class="project-desc">
+                    <h2>INDEED WEB SCRAPER</h2>
+                    <p>
+                        The project was used for researching the current job listings in my 
+                        area for the Computer Science field. It aided me in writing a 
+                        research paper that further analyzed the results gathered from 
+                        the program.
+                    </p>
+
+                    <div class="link-btns">
+                        <a class="view-btn view-code-btn hvr-grow" href="https://github.com/Alejandro-Vega/Indeed-Scraper-Analysis" target="_blank">
+                            <img class="icon" src="images/code-icon3.png">
+                            View Code
+                        </a>
+                        
+                    </div>
+
+                    <ul class="chip-list">
+                        <li class="chip">SQL</li>
+                        <li class="chip">PYTHON</li>
+                        <li class="chip">NUMPY</li>
+                        <li class="chip">BEAUTIFUL SOUP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div id="about-me-wrapper">
+            <div id="about-me-desc">
+                <h2>ABOUT ME</h2>
+                <p>
+                    I am a software developer from Texas. I offer compelling and captivating
+                    software solutions for companies and clients.
+                </p>
+            </div>
+            <div id="about-me-img">
+                <img id="about-img" src="images/face6.png">
+            </div>
+        </div>
+
+        <div id="contact-wrapper">
+            <h2>CONTACT ME</h2>
+            <p>For all enquiries, please email me using the form below</p>
+            <form class="contact-form">
+                <div id="basic-info">
+                    <input type="text" id="name" name="user_name" placeholder="Full Name">
+                    <input type="email" id="mail" name="user_email" placeholder="Email">
+                    <input type="tel" id="number" name="user_number" placeholder="Phone number">
+                </div>
+
+                <div id="contact-right">
+                    <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                    <a class="submit-btn hvr-grow" href="#">Send Message</a>
+                </div>
+
+            </form>
+        </div>
 
     </body>
 </html>

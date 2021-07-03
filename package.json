@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "hover.css": "^2.3.2"
   },
   "devDependencies": {},
